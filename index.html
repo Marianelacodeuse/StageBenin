@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- <link rel="stylesheet" href="../StageBenin/fontawesome-free-6.1.2-desktop/"> -->
+    <link rel="stylesheet"  href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="dashboard_etudiant.html">
+    <title>Accueil</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar" id="accueil">
+
+    <!-- ===================================Navbar=================================== -->
+    <div class="top-nav">
+        <div class="container">
+            <div class="row">
+                <div class="top">
+                    <p>StageBenin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <nav class="cc-navbar navbar navbar-expand-lg  navbar-light sticky-top">
+        <div class="container">
+          <a class="navbar-brand" href="#"> <span class="stage2">Stage</span><span class="stage">Benin</span></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#accueil">Accueil</a>
+                <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#etudiants" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Etudiants
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="dashboard_etudiant.html">Accéder au dashboard </a></li>
+					</ul>
+				  </li>
+
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#entreprises" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Entreprises
+					</a>
+					<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+					  <li><a class="dropdown-item" href="#dashboard_entreprise">Accéder au dashboard </a></li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="#contact">Contact</a>
+				  </li>
+            </ul>
+            <form class="d-flex">
+              <button class="btn0">Rechercher un stage</button>
+              <button class="btn1 mx-2">Poster un stage</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <!-- ========================================Hero 1=====================================  -->
+    <div class="slide-wrapper owl-carousel owl-theme" id="hero-slider">
+      <div class="slide1 pt-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-2 my-3 text-white text-uppercase">StageBenin</h1>
+            <h6 class="text-white">Trouver votre lieu de stage avec StageBenin</h6>
+            <a href="" class="btn btn-brand" data-bs-toggle="modal" data-bs-target="#modalEtudiant">Je suis un étudiant</a>
+            <a href="" class="btn btn-outline-light ms-md-3" data-bs-toggle="modal" data-bs-target="#modalEntreprise">Je suis une entreprise</a>
+        </div>
+        <div class="col-12 text-center form-group pt-5">
+          <input type="text" name="competences"   size="30"  placeholder="Mots-clé/Compétences" />
+          <select>
+            <option selected>Région</option>
+            <option value="Calavi">Abomey-Calavi</option>
+            <option value="Cotonou">Cotonou</option>
+            <option value="Porto-Novo">Porto-Novo</option>
+            <option value="Parakou">Parakou</option>
+            <option value="Allada">Allada</option>
+            <option value="Dassa">Dassa</option>
+            </select>
+          <select  ">
+              <option selected>Domaines</option>
+              <option value="Données">Analysse de données</option>
+              <option value="Veb">Développement web</option>
+              <option value="Reseau">Administration de base de données</option>
+              <option value="Informatique">Sécurité de système d'information</option>
+              <option value="Medecine">Médecine</option>
+              <option value="Pharmacie">Auxilliaire de pharmacie</option>
+              <option value="Graphisme">Graphisme</option>
+           </select>
+           <button type="submit" class="btn2 my-3">Rechercher un stage</button>
+        </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="slide2 pt-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-2 my-3 text-white text-uppercase">StageBenin</h1>
+            <h6 class="text-white">Trouver votre lieu de stage avec StageBenin</h6>
+            <a href="" class="btn btn-brand">Je suis un étudiant</a>
+            <a href="" class="btn btn-outline-light ms-md-3">Je suis une entreprise</a>
+        </div>
+        <div class="col-12 text-center form-group pt-5">
+          <input type="text" name="competences"   size="30"  placeholder="Mots-clé/Compétences" />
+          <select>
+            <option selected>Région</option>
+            <option value="Calavi">Abomey-Calavi</option>
+            <option value="Cotonou">Cotonou</option>
+            <option value="Porto-Novo">Porto-Novo</option>
+            <option value="Parakou">Parakou</option>
+            <option value="Allada">Allada</option>
+            <option value="Dassa">Dassa</option>
+            </select>
+          <select  ">
+              <option selected>Domaines</option>
+              <option value="Données">Analysse de données</option>
+              <option value="Veb">Développement web</option>
+              <option value="Reseau">Administration de base de données</option>
+              <option value="Informatique">Sécurité de système d'information</option>
+              <option value="Medecine">Médecine</option>
+              <option value="Pharmacie">Auxilliaire de pharmacie</option>
+              <option value="Graphisme">Graphisme</option>
+           </select>
+           <button type="submit" class="btn2 my-3">Rechercher un stage</button>
+        </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="slide3 pt-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-2 my-3 text-white text-uppercase">StageBenin</h1>
+            <h6 class="text-white">Trouver votre lieu de stage avec StageBenin</h6>
+            <a href="" class="btn btn-brand">Je suis un étudiant</a>
+            <a href="" class="btn btn-outline-light ms-md-3">Je suis une entreprise</a>
+        </div>
+        <div class="col-12 text-center form-group pt-5">
+          <input type="text" name="competences"   size="30"  placeholder="Mots-clé/Compétences" />
+          <select>
+            <option selected>Région</option>
+            <option value="Calavi">Abomey-Calavi</option>
+            <option value="Cotonou">Cotonou</option>
+            <option value="Porto-Novo">Porto-Novo</option>
+            <option value="Parakou">Parakou</option>
+            <option value="Allada">Allada</option>
+            <option value="Dassa">Dassa</option>
+            </select>
+          <select  ">
+              <option selected>Domaines</option>
+              <option value="Données">Analysse de données</option>
+              <option value="Veb">Développement web</option>
+              <option value="Reseau">Administration de base de données</option>
+              <option value="Informatique">Sécurité de système d'information</option>
+              <option value="Medecine">Médecine</option>
+              <option value="Pharmacie">Auxilliaire de pharmacie</option>
+              <option value="Graphisme">Graphisme</option>
+           </select>
+           <button type="submit" class="btn2 my-3">Rechercher un stage</button>
+        </div>
+
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <div class="slide4 pt-5 d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h1 class="display-2 my-3 text-white text-uppercase">StageBenin</h1>
+            <h6 class="text-white">Trouver votre lieu de stage avec StageBenin</h6>
+            <a href="" class="btn btn-brand">Je suis un étudiant</a>
+            <a href="" class="btn btn-outline-light ms-md-3">Je suis une entreprise</a>
+        </div>
+        <div class="col-12 text-center form-group pt-5">
+          <input type="text" name="competences"   size="30"  placeholder="Mots-clé/Compétences" />
+          <select>
+            <option selected>Région</option>
+            <option value="Calavi">Abomey-Calavi</option>
+            <option value="Cotonou">Cotonou</option>
+            <option value="Porto-Novo">Porto-Novo</option>
+            <option value="Parakou">Parakou</option>
+            <option value="Allada">Allada</option>
+            <option value="Dassa">Dassa</option>
+            </select>
+          <select  ">
+              <option selected>Domaines</option>
+              <option value="Données">Analysse de données</option>
+              <option value="Veb">Développement web</option>
+              <option value="Reseau">Administration de base de données</option>
+              <option value="Informatique">Sécurité de système d'information</option>
+              <option value="Medecine">Médecine</option>
+              <option value="Pharmacie">Auxilliaire de pharmacie</option>
+              <option value="Graphisme">Graphisme</option>
+           </select>
+           <button type="submit" class="btn2 my-3">Rechercher un stage</button>
+        </div>
+
+        </div>
+      </div>
+    </div> -->
+    </div>
+
+    <!-- =============================================Stages populaires========================= -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro-section">
+            <p>Rechercher par catégorie</p>
+            <h2>Catégories de stages populaires</h2>
+          </div>
+        </div>
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6">
+             <div class="stage-populaire custom-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-tower-cell"></i>
+              </div>
+              <h5><a href="#">Télécommunications</a></h5>
+              <span>10 Stages</span>
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stage-populaire custom-card">
+             <div class="icon-box">
+              <i class="fa-solid fa-fill-drip"></i>
+             </div>
+             <h5><a href="#">Graphisme</a></h5>
+             <span>15 Stages</span>
+            </div>
+         </div>
+          <div class="col-lg-4 col-md-6">
+             <div class="stage-populaire custom-card">
+              <div class="icon-box">
+                <i class="fa-solid fa-desktop"></i>
+              </div>
+              <h5><a href="#">Design & Multimédia</a></h5>
+              <span>08 Stages</span>
+             </div>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stage-populaire custom-card">
+             <div class="icon-box">
+              <i class="fa-solid fa-scissors"></i>
+             </div>
+             <h5><a href="#">Couture</a></h5>
+             <span>06 Stages</span>
+            </div>
+         </div>
+          <div class="col-lg-4 col-md-6">
+            <div class="stage-populaire custom-card">
+            <div class="icon-box">
+              <i class="fa-solid fa-wifi"></i>
+            </div>
+            <h5><a href="#">Réseau informatique</a></h5>
+            <span>10 Stages</span>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="stage-populaire custom-card">
+           <div class="icon-box">
+            <i class="fa-solid fa-plate-wheat"></i>
+           </div>
+           <h5><a href="#">Cuisine</a></h5>
+           <span>04 Stages</span>
+          </div>
+       </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================Totales des offres============================ -->
+    <section id="totales" class="bg-cover">
+      <div class="container">
+        <div class="row gy-4 text-center">
+          <div class="col-lg-4">
+            <div class="display-4">100</div>
+            <p class="mb-0">Offres disponibles</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="display-4">2000</div>
+            <p class="mb-0">Offres pourvues</p>
+          </div>
+          <div class="col-lg-4">
+            <div class="display-4">50</div>
+            <p class="mb-0">Entreprises</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===============================================Entreprises populaires============================== -->
+    <section id="société" class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro-section">
+            <p>Rechercher les entreprises populaires</p>
+            <h2>Entreprises populaires</h2>
+          </div>
+        </div>
+      </div>
+      <div id="entreprise-slider" class="owl-theme owl-carousel">
+        <div class="entreprise">
+          <img src="../img/Batimat.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>Batimat</h1>
+            <h6>Le groupe Batimat est spécialisé en négoce de matériaux de construction... </h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+          <!-- <div class="lire">
+            <a href="" class="btn btn-brand">Lire plus</a>
+          </div> -->
+        </div>
+        <div class="entreprise">
+          <img src="../img/LaPosteBenin.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>La Poste</h1>
+            <h6>La Poste du Bénin est l'opérateur chargé de la collecte, de l'acheminement...</h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+        </div>
+        <div class="entreprise">
+          <img src="../img/MOOV-CCIB.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>Moov-Bénin</h1>
+            <h6>Moov Africa Bénin est le nom d'un l'opérateur téléphonique...</h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+        </div>
+        <div class="entreprise">
+          <img src="../img/Port.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>Port Autonome de Cotonou</h1>
+            <h6>Le Port de Cotonou est un port autonome béninois situé dans la ville de Cotonou...</h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+        </div>
+        <div class="entreprise">
+          <img src="../img/soneb.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>Soneb</h1>
+            <h6>La Société nationale des eaux du Bénin a été créée en 2003 par le décret n° 2003-203 du 12 juin 2003...</h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+        </div>
+        <div class="entreprise">
+          <img src="../img/STTB.jpg" alt="">
+          <div class="overlay"></div>
+          <div class="content">
+            <h1>STTB SA</h1>
+            <h6>STTB SA est une société de droit béninois qui a comme partenaire principal le Port Autonome </h6>
+            <button type="submit" class="btn btn-brand"><a href="" >Demander un stage</a></button>
+            <a href="" class="btn btn-brand mx-2">Lire plus</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===================================================Stage récent=================================== -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 intro-section">
+            <p>Rechercher par catégorie</p>
+            <h2>Stages récents</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-xl-10 stage-infos">
+            <div class="stage-récent">
+                <div class="stage-informations">
+                  <h4><b>PayPlus</b></h4>
+                  <p>Stagiaire Développeur</p>
+                  <i class="fa-solid fa-briefcase"></i><span>2 mois</span><br>
+                  <i class="fa-solid fa-location-dot"></i><span>Carrefour Sikekodji</span>
+                  <p>Compétences <i class="fa-solid fa-angle-right"></i><small>Laravel</small><small>Python</small><small>JavaScript</small><small>HTML,CSS</small></p>
+                </div>
+                <div class="postuler">
+                  <button type="submit" class="btn btn-primary">Consulter l'offre</button>
+                </div>
+            </div>
+            <div class="stage-récent">
+              <div class="stage-informations">
+                <h4><b>Novotel</b></h4>
+                <p>Stagiaire en Cuisine</p>
+                <i class="fa-solid fa-briefcase"></i><span>2 mois</span><br>
+                <i class="fa-solid fa-location-dot"></i><span>1821 Boulevard de la Marina, Cotonou</span>
+                <p>Compétences <i class="fa-solid fa-angle-right"></i><small>Débutant accepté</small></p>
+              </div>
+              <div class="postuler">
+                <button type="submit" class="btn btn-primary">Consulter l'offre</button>
+              </div>
+          </div>
+          <div class="stage-récent">
+            <div class="stage-informations">
+              <h4><b>Novotel</b></h4>
+              <p>Stagiaire en Cuisine</p>
+              <i class="fa-solid fa-briefcase"></i><span>2 mois</span><br>
+              <i class="fa-solid fa-location-dot"></i><span>1821 Boulevard de la Marina, Cotonou</span>
+              <p>Compétences <i class="fa-solid fa-angle-right"></i><small>Débutant accepté</small></p>
+            </div>
+            <div class="postuler">
+              <button type="submit" class="btn btn-primary">Consulter l'offre</button>
+            </div>
+        </div>
+        <ul class="pagelink text-center">
+          <li class="left-arrow">&#8592;</li>
+          <li class="active">1</li>
+          <li>2</li>
+          <li>3</li>
+          <li class="right-arrow">&#8594;</li>
+        </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================================================Avis internautes================================ -->
+  <section id="avis" class="bg-cover">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 intro-section">
+          <p>Des avis?</p>
+          <h2>Que disent les gens?</h2>
+        </div>
+      </div>
+      
+    <div class="owl-carousel owl-theme" id="avis-slider">
+      <div class="avis">
+        <div class="stars">
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem ratione necessitatibus molestias placeat distinctio minima numquam ducimus optio unde hic deserunt ex id laborum dolor, amet labore ut quod.
+        </p>
+        <div class="personne d-flex align-items-center">
+          <img src="./img/payplus.png" class="me-3" alt="">
+       
+        <div>
+          <h6 class="mb-0">PayPlus</h6>
+          <small>Passerelle de paiement</small>
+        </div>
+      </div>
+        
+        </div>
+        <div class="avis">
+          <div class="stars">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem ratione necessitatibus molestias placeat distinctio minima numquam ducimus optio unde hic deserunt ex id laborum dolor, amet labore ut quod.
+          </p>
+          <div class="personne d-flex align-items-center">
+            <img src="./img/user-3.jpg" class="me-3" alt="">
+         
+          <div>
+            <h6 class="mb-0">PayPlus</h6>
+            <small>Passerelle de paiement</small>
+          </div>
+        </div>
+          
+          </div>
+          <div class="avis">
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem ratione necessitatibus molestias placeat distinctio minima numquam ducimus optio unde hic deserunt ex id laborum dolor, amet labore ut quod.
+            </p>
+            <div class="personne d-flex align-items-center">
+              <img src="./img/user-9.jpg" class="me-3" alt="">
+           
+            <div>
+              <h6 class="mb-0">PayPlus</h6>
+              <small>Passerelle de paiement</small>
+            </div>
+          </div>
+            
+            </div>
+            <div class="avis">
+              <div class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum exercitationem ratione necessitatibus molestias placeat distinctio minima numquam ducimus optio unde hic deserunt ex id laborum dolor, amet labore ut quod.
+              </p>
+              <div class="personne d-flex align-items-center">
+                <img src="./img/user-3.jpg" class="me-3" alt="">
+             
+              <div>
+                <h6 class="mb-0">PayPlus</h6>
+                <small>Passerelle de paiement</small>
+              </div>
+            </div>
+              
+              </div>
+   </div>
+  </div>
+  </section>
+
+  <!-- =======================================================Footer=========================================== -->
+  <footer>
+    <div class="footer-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 mx-auto">
+          <a href="#" class="navbar-brand">StageBenin</a>
+          <p>Contrairement à certaines plateformes de recherche de stage, StageBenin se focalise uniquement sur le bien-être
+            des étudiants. Il aide les étudiants à se trouver un lieu de stage afin d'améliorer leur connaissances et leur
+            garanti un lieu de stage. Avec cette plateforme, n'importe qui peut demander un stage à conditions d'être étudiant.
+            StageBenin accueil toute entreprise à la recherche de stagiaires et leur offre l'opportunité de poster leurs offres de stages
+            et de recruter les meilleurs ou les étudiants qui correspondent à leur profil.
+          </p>
+        </div>
+      </div>
+    </div>
+   </div>
+   <div class="footer-bottom">
+    <div class="container">
+    <p class="mb-0">Copyright@2022. All rights reserved</p>
+   </div>
+  </div>
+  </footer>
+
+  <!-- <button type="button" class="btn btn-brand">S'inscrire</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+
+  <!-- Modal -->
+<div class="modal fade" id="modalEtudiant" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 bg-cover" style="background-image:url(./img/étudiante3.jpg); min-height: 300px ; background-size: cover; background-position: center;"></div>
+            <div class="col-lg-8">
+              <form action="" class="row p-lg-5 gy-3">
+                <div class="col-12 stagebenin" id="inscription0">
+                <h1><span class="stage2">Stage</span><span class="stage">Benin</span></h1>
+                </div>
+                <div class="col-lg-6" id="inscription">
+                    <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+                </div>
+                <div class="col-lg-6" id="inscription1">
+                  <label for="exampleFormControlInput1" class="form-label">Prénoms</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre prénom">
+              </div>
+              <div class="col-lg-6" id="inscription2">
+              <label class="form-label" for="sexe">Sexe</label>
+                              <select id="sexe" class="select2 form-select">
+                                <option value="">Sélectionner</option>
+                                <option value="Masculin">Masculin</option>
+                                <option value="Féminin">Féminin</option>
+                              </select>
+              </div>
+              <div class="col-lg-6" id="inscription3">
+                <label for="exampleFormControlInput1" class="form-label">Filière</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre filière">
+            </div>
+            <div class="col-lg-6" id="inscription4">
+              <label for="exampleFormControlInput1" class="form-label">Téléphone</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(+229)">
+          </div>
+          <div class="col-lg-6" id="inscription5">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre email">
+        </div>
+        <div class="col-lg-6" id="inscription6">
+          <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Votre mot de passe">
+      </div>
+      <div class="col-lg-6" id="inscription7">
+        <label for="formFileSm" class="form-label">Carte d'étudiant</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+      </div>
+      <div class="col-12">
+        <button type="button" class="connecter" id="inscription8" style="float: right;">Vous avez déjà un compte ?</button><br>
+      <center><button type="submit" class="btn btn-brand btn-lg" id="inscription9">S'inscrire</button></center>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+
+      <div class="col-12 connexion" id="inscrire">
+      <div class="col-12 stagebenin">
+        <h1><span class="stage2">Stage</span><span class="stage">Benin</span></h1>
+        </div>
+        <div class="col-lg-12">
+          <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Votre mot de passe">
+      </div>
+        <div class="col-lg-12">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre email">
+      </div>
+      <div class="col-12">
+        <button type="button" class="connecter" id="sinscrire" style="float: right;">Vous avez déjà un compte ?</button><br>
+      <center><button type="submit" class="btn btn-brand btn-lg">Se connecter</button></center>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modalEntreprise" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-4 bg-cover" style="background-image:url(./img/entreprise3.jpg); min-height: 300px ; background-size: cover; background-position: center;"></div>
+            <div class="col-lg-8">
+              <form action="" class="row p-lg-5 gy-3">
+                <div class="col-12 stagebenin" id="inscription0">
+                <h1><span class="stage2">Stage</span><span class="stage">Benin</span></h1>
+                </div>
+                <div class="col-lg-6" id="inscription">
+                    <label for="exampleFormControlInput1" class="form-label">Nom</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre nom">
+                </div>
+                <div class="col-lg-6" id="inscription1">
+                  <label for="exampleFormControlInput1" class="form-label">Prénoms</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre prénom">
+              </div>
+              <div class="col-lg-6" id="inscription2">
+              <label class="form-label" for="sexe">Sexe</label>
+                              <select id="sexe" class="select2 form-select">
+                                <option value="">Sélectionner</option>
+                                <option value="Masculin">Masculin</option>
+                                <option value="Féminin">Féminin</option>
+                              </select>
+              </div>
+              <div class="col-lg-6" id="inscription3">
+                <label for="exampleFormControlInput1" class="form-label">Filière</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Votre filière">
+            </div>
+            <div class="col-lg-6" id="inscription4">
+              <label for="exampleFormControlInput1" class="form-label">Téléphone</label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="(+229)">
+          </div>
+          <div class="col-lg-6" id="inscription5">
+            <label for="exampleFormControlInput1" class="form-label">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre email">
+        </div>
+        <div class="col-lg-6" id="inscription6">
+          <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Votre mot de passe">
+      </div>
+      <div class="col-lg-6" id="inscription7">
+        <label for="formFileSm" class="form-label">Carte d'étudiant</label>
+        <input class="form-control form-control-sm" id="formFileSm" type="file">
+      </div>
+      <div class="col-12">
+        <button type="button" class="connecter" id="inscription8" style="float: right;">Vous avez déjà un compte ?</button><br>
+      <center><button type="submit" class="btn btn-brand btn-lg" id="inscription9">S'inscrire</button></center>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+
+      <div class="col-12 connexion" id="inscrire">
+      <div class="col-12 stagebenin">
+        <h1><span class="stage2">Stage</span><span class="stage">Benin</span></h1>
+        </div>
+        <div class="col-lg-12">
+          <label for="exampleFormControlInput1" class="form-label">Mot de passe</label>
+          <input type="password" class="form-control" id="exampleFormControlInput1" placeholder="Votre mot de passe">
+      </div>
+        <div class="col-lg-12">
+          <label for="exampleFormControlInput1" class="form-label">Email</label>
+          <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Votre email">
+      </div>
+      <div class="col-12">
+        <button type="button" class="connecter" id="sinscrire" style="float: right;">Vous avez déjà un compte ?</button><br>
+      <center><button type="submit" class="btn btn-brand btn-lg">Se connecter</button></center>
+        <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+      </div>
+    </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    
+
+   <script src="./js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/app.js"></script>	
+</body>
+</html>
