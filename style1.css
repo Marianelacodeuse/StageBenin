@@ -3,7 +3,7 @@
 body{
     font-family: 'Barlow', sans-serif;
     line-height: 1.7;
-    color: #6610f2;
+    color: black;
 }
  h1,h2,h3,h4,h5,h6{
     font-weight: 700 ;
@@ -651,6 +651,43 @@ header .header{
 /* #inscription{
     display: none;
 } */
+
+/* ================================template_voir_mon_profil_étudiant================ */
+.btn-outline-secondary:focus{
+    box-shadow: none;
+}
+.btn-outline-secondary {
+    color: white;
+    border-color: #696cff;
+    background: transparent;
+  }
+.btn-outline-secondary:hover{
+    color: white;
+    border-color: #696cff;
+    background: #696cff;
+}
+.btn-primary{
+    color: white;
+    border-color: #696cff;
+    background: #696cff;
+}
+.btn-primary:hover{
+    color: white;
+    border-color: #696cff;
+    background: transparent;
+}
+.btn-primary:focus{
+    box-shadow: none;
+}
+strong{
+    color: #6610f2;
+}
+.icon-box-icon-block a{
+    color: black;
+}
+.icon-box-icon-block a:hover{
+    color: #696cff;
+}
 
 
 

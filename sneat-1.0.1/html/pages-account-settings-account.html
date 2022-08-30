@@ -136,6 +136,14 @@
 
          <!-- actions end -->
 
+         <!-- Voir profile -->
+         <li class="menu-item">
+          <a href="../../Template/work-stocks/candidate-detail.html" class="menu-link">
+            <i class="menu-icon tf-icons bx bx-user-circle"></i>
+            <div data-i18n="voir_profile">Voir profile</div>
+          </a>
+        </li>
+
           <!-- CV -->
           <li class="menu-item">
             <a href="CV.html" class="menu-link">
@@ -149,6 +157,14 @@
             <a href="auth-register-basic.html" class="menu-link">
               <i class="menu-icon tf-icons bx bxs-lock"></i>
               <div data-i18n="CV">Changer le mot de passe</div>
+            </a>
+          </li>
+
+           <!-- logout -->
+           <li class="menu-item">
+            <a href="../../index.html" class="menu-link">
+              <i class="menu-icon tf-icons bx bx-log-out"></i>
+              <div data-i18n="logout">Se déconnecter</div>
             </a>
           </li>
           </ul>
@@ -243,8 +259,8 @@
                           </div>
                           <div class="mb-3 col-md-6">
                             <label class="form-label" for="sexe">Sexe</label>
-                            <select id="country" class="select2 form-select">
-                              <option value="">Select</option>
+                            <select id="sexe" class="select2 form-select">
+                              <option value="">Selectionner</option>
                               <option value="Masculin">Masculin</option>
                               <option value="Féminin">Féminin</option>
                             </select>
@@ -257,9 +273,19 @@
                             <label for="spécialité" class="form-label">Spécialité</label>
                             <input class="form-control" type="text" id="spécialité" name="spécialité" placeholder="Votre spécialité" />
                           </div>
-                          <div class="mb-3 col-md-12">
+                          <div class="mb-3 col-md-6">
                             <label for="niveau" class="form-label">Niveau d'étude</label>
                             <input class="form-control" type="text" id="niveau" name="spécialité" placeholder="Le niveau d'étude" />
+                          </div>
+                          <div class="mb-3 col-md-6">
+                            <label class="form-label" for="duree">Durée du stage</label>
+                            <select id="duree" class="select2 form-select">
+                              <option value="">Selectionner</option>
+                              <option value="1mois">1 mois</option>
+                              <option value="2mois">2 mois</option>
+                              <option value="3mois">3 mois</option>
+                              <option value="4mois">4 mois</option>
+                            </select>
                           </div>
                         
                         <div class="mt-2">
